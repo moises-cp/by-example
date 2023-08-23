@@ -1,0 +1,82 @@
+:root {
+  --border-radius: 0.25rem;
+
+  --color-border: #ccc;
+  --color-outline: orangered;
+  --color-outline-btn: #ddd;
+  --color-danger: #e63c3c;
+  --color-text-light: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.07rem;
+}
+
+label {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 25em;
+}
+
+.container h1,
+.container h2 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: -0.8rem;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+form > div {
+  margin-bottom: 1.25rem;
+}
+
+form input {
+  border-color: var(--color-border);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: 1px;
+  outline-color: var(--color-outline);
+  padding: 0.625rem;
+  width: 100%;
+}
+
+form input[type='submit'] {
+  cursor: pointer;
+  font-weight: 600;
+  outline-color: var(--color-outline-btn);
+}
+
+.feedback-error {
+  background-color: var(--color-danger);
+  border-radius: var(--border-radius);
+  color: var(--color-text-light);
+}
+
+.global-error {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.field .msg-error {
+  display: none;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 1.5rem;
+  padding: 0.5rem 1.5rem 0.5rem;
+}
+
+section {
+  margin: 4rem 0;
+}
