@@ -127,20 +127,30 @@ function App() {
           plain CSS to make it look a little bit better.
         </p>
         <p>
-          After the form has been submitted without any error, the submitted
-          data will be display below the "Submit" button.
+          After the form has been submitted without any errors, the submitted
+          data will be displayed below the 'Submit' button.
         </p>
         <p>
-          Even though this is a basic demo, the form has been setup to be
-          dynamic within a certain category of input fields. Meaning, we can add
-          or remove HTML input fields, without the need of updating the
+          Even though this is a basic demo, the form has been set up to be
+          dynamic within a certain category of input fields. This means that we
+          can add or remove HTML input fields without needing to update the
           JavaScript.
         </p>
         <p>
-          The are different approaches and libraries to do this. The goal here
-          was to illustrate one simple way to accomplish it using only plain
-          (vanilla) JavaScript, HTML, and CSS. If you are a developer and would
-          like to share your thoughts, please let me know.
+          There are different approaches and libraries to achieve this. The goal
+          here was to illustrate one simple way to accomplish it using only
+          plain (vanilla) JavaScript, HTML, and CSS. If you are a developer and
+          would like to share your thoughts, please let me know.
+        </p>
+        <p>
+          The code can be seen here:{' '}
+          <a
+            href="https://github.com/moises-cp/by-example/blob/development/react/form-handling-v1/src/App.js"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
         </p>
       </section>
     </div>

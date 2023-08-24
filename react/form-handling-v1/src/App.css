@@ -6,15 +6,23 @@
   --color-outline-btn: #ddd;
   --color-danger: #e63c3c;
   --color-text-light: #fff;
+  --color-text-link: #045fb4;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
+body,
+input {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.07rem;
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 label {
