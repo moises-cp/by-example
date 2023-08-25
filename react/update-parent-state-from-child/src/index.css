@@ -1,0 +1,38 @@
+:root {
+  --color-btn: #0174df;
+  --color-btn-hover: #fff;
+  --color-text-light: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  margin: 2rem auto;
+  max-width: 35em;
+  text-align: center;
+}
+
+.wrapper {
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: var(--color-btn);
+  border: 1px solid var(--color-btn);
+  border-radius: 0.3rem;
+  color: var(--color-text-light);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+button:hover {
+  background-color: var(--color-btn-hover);
+  color: var(--color-btn);
+}
