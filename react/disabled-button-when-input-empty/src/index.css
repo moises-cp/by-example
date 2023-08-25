@@ -1,0 +1,45 @@
+:root {
+  --color-btn: #0174df;
+  --color-btn-hover: #fff;
+  --color-text-light: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  margin: 2rem auto;
+  max-width: 15em;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: var(--color-btn);
+  border: 1px solid var(--color-btn);
+  border-radius: 0.3rem;
+  color: var(--color-text-light);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--color-btn-hover);
+  color: var(--color-btn);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
