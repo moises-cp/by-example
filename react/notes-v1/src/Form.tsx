@@ -1,18 +1,11 @@
 import { FC, useEffect, useState } from 'react';
-
-interface Note {
-  id: number;
-  title: string;
-  description: string;
-}
+import { getRandomNumber } from './util';
+import type { Note } from './type';
 
 interface Props {
   noteToEdit?: Note | null;
   onSubmit: (note: Note) => void;
 }
-
-const getRandomNumber = () =>
-  +Math.random().toString().split('.').slice(1).join();
 
 const Form: FC<Props> = ({ noteToEdit, onSubmit }) => {
   const [description, setDescription] = useState<string>('');
@@ -21,8 +14,6 @@ const Form: FC<Props> = ({ noteToEdit, onSubmit }) => {
   const [feedback, setFeedback] = useState<string>('');
 
   const btnLabel = noteToEdit ? 'Update' : 'Add';
-
-  console.log('form noteToEdit: ', noteToEdit);
 
   const clearFields = () => {
     setDescription('');
@@ -56,7 +47,7 @@ const Form: FC<Props> = ({ noteToEdit, onSubmit }) => {
   }, [noteToEdit]);
 
   return (
-    <form className="card" onSubmit={handleFormSubmission}>
+    <form className="card">
       <div className="input-wrapper">
         <label htmlFor="title">
           <span className="text-danger">*</span> Title

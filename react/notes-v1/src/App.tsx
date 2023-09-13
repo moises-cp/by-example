@@ -12,18 +12,18 @@ function App() {
   };
 
   const editNote = (editedNote: Note) => {
-    const idx = notes.findIndex((note) => note.id === editedNote.id);
-    if (idx === undefined) return;
+    const noteIndex = notes.findIndex((note) => note.id === editedNote.id);
+    if (noteIndex === undefined) return;
 
     const newNotes = [...notes];
-    newNotes[idx] = editedNote;
+    newNotes[noteIndex] = editedNote;
     setNotes(newNotes);
     setNoteToEdit(null);
   };
 
-  const handleFormSubmission = (newNote: Note) => {
-    const doesNoteExist = notes.find((note) => note.id === newNote.id);
-    doesNoteExist ? editNote(newNote) : addNote(newNote);
+  const handleFormSubmission = (submittedNote: Note) => {
+    const isExistingNote = notes.find((note) => note.id === submittedNote.id);
+    isExistingNote ? editNote(submittedNote) : addNote(submittedNote);
   };
 
   const deleteNote = (id: number) => {
@@ -36,7 +36,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Your TO-DOs</h1>
+        <h1>Your Notes</h1>
       </header>
       <main>
         <Form noteToEdit={noteToEdit} onSubmit={handleFormSubmission} />

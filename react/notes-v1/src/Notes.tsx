@@ -14,7 +14,7 @@ const Notes: FC<Props> = ({ notes, onDelete, onEdit }) => {
   return (
     <>
       <div className="card notes">
-        <h2>TO-DO</h2>
+        <h2>Notes</h2>
 
         {hasNotes &&
           notes.map((note) => (
