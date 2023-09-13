@@ -6,9 +6,9 @@
 
   --border-radius: 0.3125rem;
 
-  --shadow-card: -1px 3px 8px 0px rgba(0, 0, 0, 0.51);
+  --shadow-card: 0px 0px 13px 1px rgba(0, 0, 0, 0.2);
   --shadow-button-primary: 0 4px 12px rgba(27, 169, 76, 0.2);
-  --shadow-button-primary-hover: 0 4px 12px rgba(27, 169, 76, 0.5);
+  --shadow-button-primary-hover: var(--shadow-card);
 
   --space-md: 1rem;
 
@@ -30,6 +30,11 @@ input,
 textarea {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.05rem;
+}
+
+a,
+a:visited {
+  color: inherit;
 }
 
 header {
@@ -55,9 +60,9 @@ h2 {
   margin: 0;
 }
 
-main {
+.container {
   margin: var(--space-md) auto 3rem;
-  max-width: 32rem;
+  max-width: 50rem;
   padding: var(--space-md);
 }
 
@@ -101,14 +106,13 @@ button {
 
 button.primary {
   background-color: var(--color-primary);
-  box-shadow: var(--shadow-button-primary);
   color: var(--color-text-light);
   display: block;
   margin: 0 auto;
   padding: 0.8rem var(--space-md);
 }
 
-button.primary:hover {
+button:hover {
   box-shadow: var(--shadow-button-primary-hover);
 }
 
@@ -153,6 +157,32 @@ button.danger {
   margin-right: var(--space-md);
 }
 
+footer > div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer > div > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+footer a {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+footer img {
+  max-width: 40px;
+}
+
+.divider {
+  background-color: var(--color-input-border);
+  height: 1rem;
+  width: 2px;
+}
+
 .feedback {
   border-radius: var(--border-radius);
   color: var(--color-text-light);
@@ -164,8 +194,8 @@ button.danger {
 }
 
 @media (max-width: 576px) {
-  main {
-    margin-top: 0;
+  main.container {
+    margin: 0;
   }
 
   form {
@@ -183,5 +213,21 @@ button.danger {
   button.primary,
   button.secondary {
     padding: 0.2rem 0.5rem;
+  }
+
+  footer > div {
+    flex-direction: column-reverse;
+  }
+
+  footer > div > * {
+    margin-bottom: 1rem;
+  }
+
+  footer > div > *:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .divider {
+    display: none;
   }
 }

@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+# React Demo - Notes v1 - Moises Colon Ponce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I am pleased to introduce a demonstration web application that showcases the fundamental CRUD (Create, Read, Update, Delete) operations using React. This demonstration highlights the utilization of React's core functionalities, including functional components, hooks, props, and its powerful reactivity system.
 
-Currently, two official plugins are available:
+It is worth noting that this demonstration exclusively relies on React, JavaScript, HTML, and CSS to achieve its objectives. The only additional component utilized is TypeScript, enhancing the application's type safety and developer experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+We invite you to explore this demonstration to gain insights into how React can efficiently handle CRUD operations and facilitate the development of interactive web applications.
 
-## Expanding the ESLint configuration
+Should you have any questions or require further information, please do not hesitate to contact me.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<br>
 
-- Configure the top-level `parserOptions` property like this:
+## Links
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- [Demo](https://react-demo-notes-v1.web.app/)
+- [Code](./src/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<br>
+
+## Screenshots
+
+### At load time
+
+![Screenshot app at load time](./doc/at-load-time.png)
+
+### After adding notes
+
+![Screenshot app with notes](./doc/after-adding-tasks.png)
+
+### When editing a note
+
+![Screenshot app with notes](./doc/editing.png)
+
+<br>
+
+## Lighthouse
+
+### Desktop
+
+![Screenshot app with notes](./doc/lighthouse-desktop.png)
+
+### Mobile
+
+![Screenshot app with notes](./doc/lighthouse-mobile.png)
