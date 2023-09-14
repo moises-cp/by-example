@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Notes from './Notes';
 import Form from './Form';
+import Footer from './Footer';
 import type { Note } from './type';
 
 function App() {
@@ -38,34 +39,13 @@ function App() {
       <header>
         <h1>Your Notes</h1>
       </header>
+
       <main className="container">
         <Form noteToEdit={noteToEdit} onSubmit={handleFormSubmission} />
         <Notes notes={notes} onDelete={deleteNote} onEdit={handleNoteToEdit} />
       </main>
-      <footer className="container">
-        <div>
-          <a
-            href="https://www.linkedin.com/in/moisescolonponce/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Moisés Colón Ponce
-          </a>
-          <div className="divider"></div>
-          <a
-            href="https://github.com/moises-cp/by-example/tree/development/react/notes-v1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              alt="GitHub logo"
-              src="github-mark.svg"
-              width={40}
-              height={40}
-            />
-          </a>
-        </div>
-      </footer>
+
+      <Footer />
     </>
   );
 }
